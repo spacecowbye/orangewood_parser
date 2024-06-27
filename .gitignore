@@ -1,0 +1,6 @@
+*.h5
+*.db
+*.json
+.env
+temp_resumes
+*.pickle
