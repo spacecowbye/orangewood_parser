@@ -44,3 +44,7 @@ https://airtable.com/
 https://support.airtable.com/docs/finding-airtable-ids
 
 4. Run the Streamlit app
+
+```
+streamlit run main.py
+```
