@@ -1,0 +1,13 @@
+transformers
+flair
+torch
+scipy
+numpy
+matplotlib
+beautifulsoup4
+python-docx
+pdfplumber
+python-dateutil
+streamlit
+pyairtable
+openai

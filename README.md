@@ -1,41 +1,46 @@
-# Resume Processing App
+# Resume Parser Application
 
-A Streamlit application that processes resumes from a zip file and uploads the extracted data to Airtable. The application parses the resumes, extracts relevant information such as name, email, phone number, work experience, education, and skills, and stores this information in Airtable.
+## Description
+This Streamlit-based application processes multiple resumes from a zip file, extracts key information, and uploads the data to Airtable. It uses various libraries for resume parsing, natural language processing, and cloud storage integration.
 
 ## Features
+- Upload multiple resumes in a zip file
+- Parse resumes to extract key information
+- Utilize AI (Gemini) for enhanced data extraction when needed
+- Upload parsed data to Airtable
+- User-friendly interface built with Streamlit
 
-- Upload a zip file containing resumes in PDF format.
-- Extracts and parses resume information.
-- Extracted information includes:
-  - Name
-  - Email
-  - Phone number
-  - Work experience
-  - Education
-  - Skills
-- Uploads the extracted information to Airtable.
-
-## Requirements
-
-- Python 3.6 or later
+## Prerequisites
+- Python 3.x
 - Streamlit
 - parcv
 - pyairtable
 - openai
 - zipfile
 - tempfile
-- dotenv (for environment variable management)
 
 ## Installation
-
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/resume-processing-app.git
-   cd resume-processing-app
-   ```
-2. Create a virtual environment and activate it:
-    ```
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-# orangewood_parser
+
+```
+git clone https://github.com/spacecowbye/orangewood_parser.git
+cd orangewood_parser
+```
+
+2. Install the required packages:
+
+```
+pip install -r requirements.txt
+```
+
+3. Set up your environment variables:
+- `AUTH_TOKEN`: Your Airtable API key
+- `BASE_ID`: Your Airtable base ID
+- `TABLE_ID`: Your Airtable table ID
+- `Api key` : Gemini api key in src/gemini_query.py
+
+To get the airtable api keys
+https://airtable.com/
+https://support.airtable.com/docs/finding-airtable-ids
+
+4. Run the Streamlit app
