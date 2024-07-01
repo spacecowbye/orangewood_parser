@@ -43,6 +43,9 @@ To get the airtable api keys
 https://airtable.com/
 https://support.airtable.com/docs/finding-airtable-ids
 
+
+Before running the streamlit app run the app.py script to fix any dependency issues that arise here, once this is done you won't face any dependency issues.
+
 4. Run the Streamlit app
 
 ```
